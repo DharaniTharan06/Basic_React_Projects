@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #495057;
+  outline: none;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+form p {
+  color: #dc3545;
+  font-size: 0.85em;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  text-align: left;
+  min-height: 1.2em;
+}
+
+form input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+}
+
+form input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 500px) {
+  form {
+    padding: 20px;
+    border-radius: 8px;
+    gap: 12px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="password"],
+  form input[type="submit"] {
+    font-size: 0.95em;
+    padding: 10px 12px;
+  }
+
+  form p {
+    font-size: 0.8em;
+  }
+}
